@@ -1,4 +1,4 @@
-id;films;genre(s);R‚alisateur(s);acteur(s)
-;la soupe aux choux;com‚die;Jean Girault;Louis de funŠs, Jean Carmet, Jacques Villeret
-;l'aile ou la cuisse;com‚die;Claude Zidi;Louis de funŠs, Coluche, Julien Guiomar
-;la folie des grandeurs;com‚die historique;G‚rard Oury;Louis de funŠs, Yves Montand
+id;films;genre(s);R‚alisateur(s);acteur(s);date de sortie
+;la soupe aux choux;com‚die;Jean Girault;Louis de funŠs, Jean Carmet, Jacques Villeret;02/12/1981
+;l'aile ou la cuisse;com‚die;Claude Zidi;Louis de funŠs, Coluche, Julien Guiomar; 27/10/1976
+;la folie des grandeurs;com‚die historique;G‚rard Oury;Louis de funŠs, Yves Montand;08/12/1971
