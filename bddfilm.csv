@@ -1,4 +1,4 @@
-id;film;genre(s);r‚alisateur(s);acteur(s);date de sortie
-;La Haine;Drame;Mathieu Kassovitz;Vincent Cassel/Hubert Kound‚/Sa‹d Taghmaoui;31/05/1995
-;Get out;Thriller;Jordan Peele;Daniel Kaluuya/Allison Williams/Catherine Keener;31/05/2017
-;Split;Thriller/Fantastique/Epouvante-horreur;M. Night Shyamalan;James McAvoy/Anya Taylor-Joy/Betty Buckley;22/02/2017
+id;film;genre(s);realisateur(s);acteur(s);date de sortie
+;la haine;drame;mathieu kassovitz;vincent cassel/hubert kound/said taghmaoui;31/05/1995
+;get out;thriller;jordan peele;daniel kaluuya/allison williams/catherine keener;31/05/2017
+;split;thriller/fantastique/epouvante-horreur;m. night shyamalan;james mcavoy/anya taylor-joy/betty buckley;22/02/2017
