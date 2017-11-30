@@ -9,6 +9,7 @@ else {
 }    
 
 if (empty($route)) {
+
 }
 
 switch ($route) {
@@ -16,8 +17,14 @@ switch ($route) {
        include("views/homeview.php");
        break;
 
+    case (preg_match('#film/[0-9]#',$route) ? true : false):
+        $id = $route[5];
+        include("controllers/filmController.php");
+        break;
+
    default:
        include("controllers/".$route."Controller.php");
        break;
 }
+
 ?>

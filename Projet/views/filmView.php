@@ -35,27 +35,32 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Films
-        <small>- Meilleurs films de tous les temps</small>
+      <h1 class="my-4"><?=$film['Titre']?>
+        <small><?php /*echo $genre['Nom']*/?></small>
       </h1>
 
-	  <?php foreach ($films as $key => $film): ?>
+	  
       <!-- Project One -->
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-12">
           <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="pic/filmpic<?=$key+1?>" alt="Scène du film <?=$film['Titre']?>">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="pic/filmpic" alt="Scène du film <?=$film['Titre']?>">
           </a>
         </div>
-        <div class="col-md-5">
-          <h3><?=$film['Titre']?></h3>
+        <div class="col-md-12">
+          
+          <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<?=$film['Description']?></p>
           <p><?=$film['Description']?></p>
-          <a class="btn btn-primary" href="#">View Film</a>
+          <p><?=$film['Description']?></p>
+          <p><?=$film['Description']?></p>
+          <p><?=$film['Description']?></p>
+          <p><?=$film['Description']?></p>
+          <p><?=$film['Description']?></p>
+
         </div>
       </div>
       <!-- /.row -->
       <hr>
-	  <?php endforeach ?>
 
     </div>
     <!-- /.container -->

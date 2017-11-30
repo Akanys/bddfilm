@@ -2307,15 +2307,15 @@ fieldset[disabled] a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #fff !important;
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  color: #343a40 !important;
+  background-color: #ffffff !important;
+  border-color: #343a40 !important;
 }
 
 .btn-primary:focus, .btn-primary.focus {
