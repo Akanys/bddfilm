@@ -11,10 +11,10 @@
     <title>Films</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?=$BASE_URL?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <link href="<?=$BASE_URL?>css/1-col-portfolio.css" rel="stylesheet">
 
   </head>
 
@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">CinéMag</a>
+        <a class="navbar-brand" href="<?=$BASE_URL?>films">CinéMag</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,26 +35,29 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4"><?=$titre['Titre']?>
-        <small><?php /*echo $genre['Nom']*/?></small>
+      <h1 class="my-4"><?=$titre['Titre']?> | <small><?=$titre['Date_de_sortie']?><small>
       </h1>
 
 	  
       <!-- Project One -->
-      <div class="row">
-        <div class="col-md-12">
-          <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="pic/filmpic<?=$titre['id'] ?>" alt="Scène du film <?=$titre['Titre']?>">
-          </a>
+      <div class="row tout">
+        <div class="col-md-7">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="<?=$BASE_URL?>pic/affiche<?=$titre['id'] ?>" alt="Scène du film <?=$titre['Titre']?>">
         </div>
-        <div class="col-md-12">
+        <div class="col-md-5 informations">
+          <p id="syno">Synopsis</p>
           <p><?=$titre['Description']?></p>
+          <p>Genre : </p>
+          <?php foreach ($genre as $key => $genre): ?>
+          <p><?=$genre['Nom']?></p>
+          <?php endforeach ?>
           <p>Date de sortie : <?=$titre['Date_de_sortie']?></p>
           <p>Réalisateur : <?=$realisateur['Prenom']?> <?=$realisateur['Nom']?> <?=$realisateur['Date_de_naissance']?></p>
           <p>Acteurs :</p>
           <?php foreach ($film as $key => $film): ?>
           <p><?=$film['Prenom']?> <?=$film['Nom']?> <?=$film['Date_de_naissance']?></p>
           <?php endforeach ?>
+        </div>
 
         </div>
       </div>
@@ -67,7 +70,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      <p class="m-0 text-center text-white">Benjamin | Rémi | Jean-Christophe | Eva</p>
       </div>
       <!-- /.container -->
     </footer>

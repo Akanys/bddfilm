@@ -1,4 +1,7 @@
 <?php
+
+$BASE_URL = "http://localhost/projets/films/";
+
 if (!isset($_GET['route']) || empty($_GET['route']))
 {
    $route = 'home';

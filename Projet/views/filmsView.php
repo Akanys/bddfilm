@@ -50,7 +50,7 @@
         <div class="col-md-5">
           <h3><?=$film['Titre']?></h3>
           <p><?=$film['Description']?></p>
-        <a class="btn btn-primary" onclick='<?php $route="film/".$film['id'] ?>'>View Film</a>
+        <a class="btn btn-primary" href="film/<?=$film['id']?>">View Film</a>
         </div>
       </div>
       <!-- /.row -->
@@ -63,7 +63,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      <p class="m-0 text-center text-white">Benjamin | Rémi | Jean-Christophe | Eva</p>
       </div>
       <!-- /.container -->
     </footer>
