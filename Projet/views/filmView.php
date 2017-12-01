@@ -35,7 +35,7 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4"><?=$film['Titre']?>
+      <h1 class="my-4"><?=$titre['Titre']?>
         <small><?php /*echo $genre['Nom']*/?></small>
       </h1>
 
@@ -44,18 +44,17 @@
       <div class="row">
         <div class="col-md-12">
           <a href="#">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="pic/filmpic" alt="Scène du film <?=$film['Titre']?>">
+          <img class="img-fluid rounded mb-3 mb-md-0" src="pic/filmpic<?=$titre['id'] ?>" alt="Scène du film <?=$titre['Titre']?>">
           </a>
         </div>
         <div class="col-md-12">
-          
-          <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<?=$film['Description']?></p>
-          <p><?=$film['Description']?></p>
-          <p><?=$film['Description']?></p>
-          <p><?=$film['Description']?></p>
-          <p><?=$film['Description']?></p>
-          <p><?=$film['Description']?></p>
-          <p><?=$film['Description']?></p>
+          <p><?=$titre['Description']?></p>
+          <p>Date de sortie : <?=$titre['Date_de_sortie']?></p>
+          <p>Réalisateur : <?=$realisateur['Prenom']?> <?=$realisateur['Nom']?> <?=$realisateur['Date_de_naissance']?></p>
+          <p>Acteurs :</p>
+          <?php foreach ($film as $key => $film): ?>
+          <p><?=$film['Prenom']?> <?=$film['Nom']?> <?=$film['Date_de_naissance']?></p>
+          <?php endforeach ?>
 
         </div>
       </div>

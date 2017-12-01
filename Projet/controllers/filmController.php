@@ -7,9 +7,13 @@ try {
     die();
 }
 
-$results = $db->query("SELECT * FROM titre WHERE id=$id");
+$results = $db->query("SELECT * FROM acteurs JOIN a_joue ON acteurs.id=a_joue.id_Acteurs WHERE a_joue.id=$id");
+$resultfilm = $db->query("SELECT * FROM titre WHERE titre.id=$id");
+$resultrea = $db->query("SELECT * FROM realisateurs WHERE realisateurs.id=$id");
 
-$film = $results->fetch();
+$realisateur = $resultrea->fetch();
+$titre = $resultfilm->fetch();
+$film = $results->fetchall();
 
 include("views/filmView.php"); //Attention, les fichiers sont include donc pour le serveur on est toujours au niveau d'index.php, et pas dans le dossier "controllers", donc on apelle "views/filmsView.php" et non pas "../views/filmsView.php"
 

@@ -50,7 +50,7 @@
         <div class="col-md-5">
           <h3><?=$film['Titre']?></h3>
           <p><?=$film['Description']?></p>
-          <a class="btn btn-primary" href="#">View Film</a>
+        <a class="btn btn-primary" onclick='<?php $route="film/".$film['id'] ?>'>View Film</a>
         </div>
       </div>
       <!-- /.row -->
